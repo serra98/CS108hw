@@ -1,0 +1,206 @@
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> for x in [2,3,4,5]:
+	print("x = ",x)
+
+	
+x =  2
+x =  3
+x =  4
+x =  5
+>>> for ch in "hello, world!":
+	print(ch * 5)
+
+	
+hhhhh
+eeeee
+lllll
+lllll
+ooooo
+,,,,,
+     
+wwwww
+ooooo
+rrrrr
+lllll
+ddddd
+!!!!!
+>>> for ch in "hello, world!":
+	if ch in ", !.?":
+		print(ch)
+
+		
+,
+ 
+!
+>>> for ch in "hello, world!":
+	if ch not in ", !.?":
+		print(ch)
+
+		
+h
+e
+l
+l
+o
+w
+o
+r
+l
+d
+>>> range(10)
+range(0, 10)
+>>> list(range(0,10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(100,0,-5))
+[100, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5]
+>>> list(range(0,100,3))
+[0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99]
+>>> 
+>>> # use the range function to control a for loop:
+>>> for i in range(10):
+	print("This is getting repetitive...")
+
+	
+This is getting repetitive...
+This is getting repetitive...
+This is getting repetitive...
+This is getting repetitive...
+This is getting repetitive...
+This is getting repetitive...
+This is getting repetitive...
+This is getting repetitive...
+This is getting repetitive...
+This is getting repetitive...
+>>> #print out multiple of 3,less than 100:
+>>> for x in range(0,100,3):
+	print(x)
+
+	
+0
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+33
+36
+39
+42
+45
+48
+51
+54
+57
+60
+63
+66
+69
+72
+75
+78
+81
+84
+87
+90
+93
+96
+99
+>>> for x in range(0,100,3):
+	print(x, end=",")
+
+	
+0,3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,
+>>> num = 10
+>>> for num in range(num):
+	print('num = ', num)
+
+	
+num =  0
+num =  1
+num =  2
+num =  3
+num =  4
+num =  5
+num =  6
+num =  7
+num =  8
+num =  9
+>>>  for num in range(num):
+	print('num = ', num)
+	
+SyntaxError: unexpected indent
+>>> for num in range(num):
+	print('num = ', num)
+
+	
+num =  0
+num =  1
+num =  2
+num =  3
+num =  4
+num =  5
+num =  6
+num =  7
+num =  8
+>>> for num in range(num):
+	print('num = ', num)
+
+	
+num =  0
+num =  1
+num =  2
+num =  3
+num =  4
+num =  5
+num =  6
+num =  7
+>>> for num in range(num):
+	print('num = ', num)
+
+	
+num =  0
+num =  1
+num =  2
+num =  3
+num =  4
+num =  5
+num =  6
+>>> list(range(10))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> # using num as seed to the range function: range(num)
+>>> # the loop index variable: for num in ...
+>>> num = 10
+>>> for x in range(num): # x is the loop index variable
+	print('x = ', x)
+
+	
+x =  0
+x =  1
+x =  2
+x =  3
+x =  4
+x =  5
+x =  6
+x =  7
+x =  8
+x =  9
+>>> for x in range(num): # x is the loop index variable
+	print('x = ', x)
+
+x =  0
+x =  1
+x =  2
+x =  3
+x =  4
+x =  5
+x =  6
+x =  7
+x =  8
+x =  9
+>>> 
